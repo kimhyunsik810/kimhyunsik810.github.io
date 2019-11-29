@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jq_example_1</title>
+    <style media="screen">
+      #gallery
+      {
+        width: 950px;
+        height: 190px;
+        background: #FF0;
+        border: 2px solid black;
+        border-radius: : 15px;
+      }
+
+      ul
+      {
+        list-style: none;
+      }
+
+      ul li
+      {
+        display: inline-block;
+        float: left;
+        padding: 10px;
+      }
+
+      .bingPic
+      {
+        position: absolute;
+        display: none;
+        left: 100px;
+        width: 400px;
+        height: 340px;
+      }
+
+      .smallPic
+      {
+        border: 2px dotted red;
+        width: 200px;
+        height: 140px;
+      }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#s1").click(function(){
+          $("#big1").fadeIn(1000);
+        });
+        $("#big1").click(function(){
+          $("#big1").fadeOut(1000);
+        });
+      });
+      $(document).ready(function(){
+        $("#s2").click(function(){
+          $("#big2").fadeIn(1000);
+        });
+        $("#big2").click(function(){
+          $("#big2").fadeOut(1000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>fadeln/fadeout 사용법</h1>
+    <hr>
+    <ol>
+      <li>작은 이미지를 클릭하면 큰 이미지가 나타납니다.</li>
+      <li>큰 이미지를 클릭하면 큰 이미지가 사라집니다.</li>
+    </ol>
+    <hr>
+    <div id="gallery">
+      <ul>
+        <li>
+          <img id="s1" class="smallPic" src="Web_Programming_img/Action_Rabbit_1.jpg" alt="Action_Rabbit_1">
+          <img id="big1" class="bigPic"src="Web_Programming_img/Action_Rabbit_2.jpg" alt="Action_Rabbit_2">
+        </li>
+        <li>
+          <img id="s2" class="smallPic" src="Web_Programming_img/Action_Rabbit_3.jpg" alt="Action_Rabbit_3">
+          <img id="big2" class="bigPic" src="Web_Programming_img/Action_Rabbit_4.jpg" alt="Action_Rabbit_4">
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

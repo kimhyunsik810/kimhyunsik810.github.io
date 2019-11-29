@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jq_example_2</title>
+    <style media="screen">
+      .slide
+      {
+        width: 210px;
+        border: 2px solid #333;
+        box-shadow: 2px 2px 3px #000;
+        float: left;
+        margin-top: 30px;
+        margin-right: 20px;
+      }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#sUp").click(function(){
+          $(".slide").slideUp(3000);
+        });
+        $("#sDwon").click(function(){
+          $(".slide").slideDown(3000);
+        });
+        $("#sToggle").click(function(){
+          $(".slide").slideToggle(3000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <input id="sUp" type="button" value="SlideUp">
+      <input id="sDown" type="button" value="SlideDown">
+      <input id="sToggle" type="button" value="SlideToggle">
+    </form>
+    <div class="slide">
+      <img src="Web_Programming_img/Action_Rabbit_1.jpg" alt="Action_Rabbit_1">
+    </div>
+    <div class="slide">
+      <p width="200" height="140">
+        겨울입니다. 눈이 옵니다. 년말년시 잘 보내시길...
+      </p>
+    </div>
+  </body>
+</html>
