@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jquery_Test_2-3</title>
+    <style media="screen">
+      .big
+      {
+        display: none;
+        width: 350px;
+        height: 350px;
+      }
+      input
+      {
+        width: 150px;
+        height: 30px;
+        border: 1px solid #CCC;
+        margin: 10px 15px;
+      }
+      img
+      {
+        width: 150px;
+        height: 150px;
+      }
+    </style>
+    <script src="../../Web_Programming_jquery/jquery_3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#button1").click(function(){
+          $("#bigPic1").slideToggle(1000);
+        });
+        $("#button2").click(function(){
+          $("#bigPic2").slideToggle(1000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <table border="1" contenteditable="0">
+      <tbody>
+        <tr>
+          <th>
+            <img src="../../Web_Programming_img/Action_Rabbit_1.jpg" alt="Action_Rabbit_1">
+          </th>
+          <th>
+            <img src="../../Web_Programming_img/Action_Rabbit_2.jpg" alt="Action_Rabbit_2">
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <input id="button1" type="button" value="Image Toggle">
+          </td>
+          <td>
+            <input id="button2" type="button" value="Image Toggle">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img id="bigPic1" class="big" src="../../Web_Programming_img/Action_Rabbit_1.jpg" alt="Action_Rabbit_1">
+          </td>
+          <td>
+            <img id="bigPic2" class="big" src="../../Web_Programming_img/Action_Rabbit_2.jpg" alt="Action_Rabbit_2">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

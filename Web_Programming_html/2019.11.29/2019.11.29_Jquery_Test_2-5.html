@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jquery_Test_2-5</title>
+    <style media="screen">
+      button
+      {
+        width: 100px;
+        height: 30px;
+        border: 1px solid red;
+      }
+      img
+      {
+        border: 2px solid red;
+      }
+    </style>
+    <script src="../../Web_Programming_jquery/jquery_3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#button1").click(function(){
+          $("#rabbit").animate({marginLeft: "+=300px"}, "slow");
+          $("#rabbit").animate({marginLeft: "-=300px"}, "slow")
+        });
+        $("#button2").click(function(){
+          $("#rabbit").animate({height: "toggle"}, "slow")
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <div>
+      <img id="rabbit" src="../../Web_Programming_img/Action_Rabbit_1.jpg" alt="Action_Rabbit_1">
+      <p>
+        <b>교양있는 토끼</b> 차를 마신다.
+      </p>
+      <button id="button1" type="button" name="button1">좌우 이동</button>
+      <button id="button2" type="button" name="button2">아미지 토글</button>
+    </div>
+  </body>
+</html>
