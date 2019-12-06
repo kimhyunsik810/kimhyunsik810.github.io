@@ -62,11 +62,15 @@ aside#left
 #left h3
 {
   background: #E3E3E3;
+  margin: 0px;
+  padding: 0px;
 }
 #left ul
 {
   color: #FFF;
   list-style: none;
+  margin: 0px;
+  padding: 0px;
   text-indent: 15px;
 }
 #left ul li
@@ -84,11 +88,4 @@ aside#left
 #left ul li a:hover
 {
   background: #D03;
-}
-#main
-{
-  color: #444;
-  overflow: hidden;
-  float: left;
-  width: 400px;
 }
