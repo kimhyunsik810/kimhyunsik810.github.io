@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Introduce</title>
+    <style media="screen">
+      #basic strong
+      {
+        color: blue;
+      }
+      .list
+      {
+        font-size: 25px;
+      }
+      .idList
+      {
+        display: none;
+      }
+    </style>
+    <script src="../../Web_Programming_jquery/jquery_3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#show").click(function(){
+          $(".idList").toggle();
+        });
+      });
+      $(window).load(function(){
+        var age
+      })
+    </script>
+  </head>
+  <body>
+    <div>
+      <h3>Introduce</h3>
+      <hr>
+      <p id="basic">
+        <strong>2019년 12월 06일</strong>에 웹 프로그래밍 과목으로 생성한 홈페이지 입니다.<br>
+        아래의 버튼을 클릭하시면 정보가 출력됩니다.<br>
+      </p>
+      <button id="show" type="button" name="button">Show List</button>
+      <hr>
+    </div>
+    <div>
+      <div class="list">
+        <strong>Name</strong>
+      </div>
+      <div class="idList">
+        김현식 金賢植 Kim Hyun Sik
+      </div>
+      <hr>
+      <div class="list">
+        <strong>Date of Birth</strong>
+      </div>
+      <div class="idList">
+        2000.08.10
+      </div>
+      <hr>
+
+    </div>
+  </body>
+</html>
