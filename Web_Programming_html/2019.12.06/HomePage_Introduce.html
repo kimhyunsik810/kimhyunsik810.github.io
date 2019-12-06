@@ -14,7 +14,13 @@
       }
       .idList
       {
+        margin-top: 10px;
         display: none;
+      }
+      .idList ol
+      {
+        margin: 0px;
+        padding-left: 20px;
       }
     </style>
     <script src="../../Web_Programming_jquery/jquery_3.3.1.js"></script>
@@ -24,9 +30,6 @@
           $(".idList").toggle();
         });
       });
-      $(window).load(function(){
-        var age
-      })
     </script>
   </head>
   <body>
@@ -45,7 +48,7 @@
         <strong>Name</strong>
       </div>
       <div class="idList">
-        김현식 金賢植 Kim Hyun Sik
+        김현식 (金賢植 / Kim Hyun-sik)
       </div>
       <hr>
       <div class="list">
@@ -53,9 +56,51 @@
       </div>
       <div class="idList">
         2000.08.10
+        <script type="text/javascript">
+          var birthday = new Date("00/08/10");
+          var today = new Date();
+          var years = today.getFullYear() - birthday.getFullYear();
+
+          birthday.setFullYear(today.getFullYear());
+
+          if(today < birthday)
+          {
+            years--;
+          }
+
+          document.write("(만 " + years + "세)");
+        </script>
       </div>
       <hr>
-
+      <div class="list">
+        <strong>Education</strong>
+      </div>
+      <div class="idList">
+        <ol>
+          <li>대길초등학교(졸업)</li>
+          <li>문창중학교(졸업)</li>
+          <li>영신고등학교(졸업)</li>
+          <li>동양미래대학교(재학)</li>
+        </ol>
+      </div>
+      <hr>
+      <div class="list">
+        <strong>
+          My Github Address
+        </strong>
+      </div>
+      <div class="idList">
+        <a href="https://github.com/kimhyunsik810" style="text-decoration: none; color: red" target="_blank">Click Here</a>
+      </div>
+      <hr>
+      <div class="list">
+        <strong>Certification</strong>
+      </div>
+      <div class="idList">
+        None
+      </div>
+      <hr>
     </div>
+
   </body>
 </html>
