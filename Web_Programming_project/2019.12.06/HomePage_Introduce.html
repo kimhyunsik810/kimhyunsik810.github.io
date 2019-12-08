@@ -22,6 +22,23 @@
         margin: 0px;
         padding-left: 20px;
       }
+      #show
+      {
+        width: auto;
+        height: auto;
+        margin: 0px;
+        padding: 5px;
+        border: 1px solid skyblue;
+        border-radius: 5px;
+        color: skyblue;
+        background-color: white;
+      }
+      #show:hover
+      {
+        color: white;
+        border-color: skyblue;
+        background-color: skyblue;
+      }
     </style>
     <script src="../../Web_Programming_jquery/jquery_3.3.1.js"></script>
     <script type="text/javascript">
@@ -57,18 +74,18 @@
       <div class="idList">
         2000.08.10
         <script type="text/javascript">
-          var birthday = new Date("00/08/10");
-          var today = new Date();
-          var years = today.getFullYear() - birthday.getFullYear();
+            var birthday = new Date("00/08/10");
+            var today = new Date();
+            var years = today.getFullYear() - birthday.getFullYear();
 
-          birthday.setFullYear(today.getFullYear());
+            birthday.setFullYear(today.getFullYear());
 
-          if(today < birthday)
-          {
-            years--;
-          }
+            if(today < birthday)
+            {
+              years--;
+            }
 
-          document.write("(만 " + years + "세)");
+            document.write("(만 " + years + "세)");
         </script>
       </div>
       <hr>

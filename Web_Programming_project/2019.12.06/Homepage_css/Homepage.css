@@ -1,0 +1,176 @@
+body
+{
+  width: auto;
+  height: auto;
+  margin: 5px;
+  padding: 0px;
+  text-align: center;
+}
+/*header start*/
+header
+{
+  display: inline;
+  width: 100%;
+  height: 50px;
+}
+header div
+{
+  width: auto;
+  height: 50px;
+}
+header div a
+{
+  width: auto;
+  height: 50px;
+  text-decoration: none;
+}
+header div a img
+{
+  width: 50px;
+  height: 50px;
+  float: left;
+
+}
+header div a h1
+{
+  display: inline;
+  width: auto;
+  height: 40px;
+  margin: 0px;
+  padding: 5px 0px;
+  float: left;
+  color: #3F3F3F;
+}
+/*header End*/
+/*nav Start*/
+nav
+{
+  width: 100%;
+  height: 48px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+nav ul
+{
+  list-style: none;
+}
+nav ul li
+{
+  display: inline;
+  width: auto;
+  height: auto;
+  margin: 0px;
+  padding: 0px 10px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+nav ul li a
+{
+  display: inline;
+  width: auto;
+  height: auto;
+  margin: 0px;
+  padding: 0px 10px;
+  text-decoration: none;
+  color: black;
+}
+nav ul li a:hover
+{
+  text-decoration: underline;
+  color: orange;
+}
+/*nav End*/
+/*aside Start*/
+aside#left
+{
+  width: auto;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+}
+#left h3
+{
+  width: 200px;
+  height: 20px;
+  margin: 0px;
+  padding: 5px 0px;
+  float: left;
+  background: #E3E3E3;
+}
+#left ul
+{
+  width: 200px;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  color: #FFF;
+  list-style: none;
+  text-indent: 15px;
+}
+#left ul li
+{
+  width: 200px;
+  height: 30px;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  background: #3F3F3F;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: left;
+}
+#left ul li a
+{
+  width: 190px;
+  height: 30px;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  text-decoration: none;
+  color: #FFF;
+}
+#left ul li a:hover
+{
+  width: 200px;
+  height: 30px;
+  margin: 0px;
+  padding: 0px;
+  background: #D03;
+}
+/*aside End*/
+/*section Start*/
+section#main
+{
+  width: auto;
+  height: auto;
+  margin: 0PX 10px 0px 10px;
+  padding: 0px;
+  float: left;
+}
+
+#article_1 iframe
+{
+  width: 1480px;
+  height: 740px;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+/*section End*/
+/*footer Start*/
+footer
+{
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  font-size: 10pt;
+  text-align: left;
+  text-transform: lowercase;
+}
+/*footer End*/
