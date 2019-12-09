@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jquery</title>
+    <style media="screen">
+      div#paragraph1
+      {
+        display: none;
+      }
+      div#paragraph2
+      {
+        display: none;
+      }
+    </style>
+    <script src="../../Web_Programming_jquery/jquery_3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#bnt1").click(function(){
+          $("#paragraph1").slideToggle(1000);
+        });
+        $("#bnt2").click(function(){
+          $("#paragraph2").slideToggle(1000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <div id="jqHeader">
+        <button id="bnt1" type="button" name="grammar">Grammar</button>
+        <button id="bnt2" type="button" name="selector">Selector</button>
+      </div>
+      <hr>
+      <div id="jqBody">
+        <h3>jQuery Grammar</h3>
+        <hr>
+        <div id="paragraph1">
+          <h4>Function</h4>
+          <ol>
+            <li>jQuery(<strong>Selector</strong>)</li>
+            <li>jQuery(<strong>HTML Code</strong>)</li>
+            <li>jQuery(<strong>Other Function</strong>)</li>
+          </ol>
+          <h4>The Same Abbreviation</h4>
+          <ul>
+            <li>jQuery(document).ready(function(){<strong>Code</strong>})</li>
+            <li>jQuery(function(){<strong>Code</strong>})</li>
+            <li>$(function(){<strong>Code</strong>})</li>
+          </ul>
+        </div>
+        <h3>jQuery Selectors</h3>
+        <hr>
+        <div id="paragraph2">
+          <h4>Basic Selectors</h4>
+          <ol>
+            <li>All Selector</li>
+            <li>Tag Selector</li>
+            <li>ID Selector</li>
+            <li>Class Selector</li>
+            <li>Child Selector</li>
+            <li>Sub Selector</li>
+          </ol>
+          <h4>Attribute Selectors</h4>
+          <ol>
+            <li>[Attribute = "Value"]</li>
+            <li>[Attribute |= "Value"]</li>
+            <li>[Attribute ~= "Value"]</li>
+            <li>[Attribute ^= "Value"]</li>
+            <li>[Attribute $= "Value"]</li>
+            <li>[Attribute *= "Value"]</li>
+          </ol>
+          <h4>Filter Selectors</h4>
+          <ol>
+            <li>Element:odd</li>
+            <li>Element:even</li>
+            <li>Element:first</li>
+            <li>Element:last</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
