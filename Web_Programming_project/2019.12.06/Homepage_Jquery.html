@@ -12,7 +12,7 @@
       {
         display: none;
       }
-      #bnt1
+      #btn1
       {
         width: auto;
         height: auto;
@@ -23,13 +23,13 @@
         color: skyblue;
         background-color: white;
       }
-      #bnt1:hover
+      #btn1:hover
       {
         color: white;
         border-color: skyblue;
         background-color: skyblue;
       }
-      #bnt2
+      #btn2
       {
         width: auto;
         height: auto;
@@ -40,7 +40,7 @@
         color: #FF0000;
         background-color: white;
       }
-      #bnt2:hover
+      #btn2:hover
       {
         color: white;
         border-color: #FF0000;
@@ -50,10 +50,10 @@
     <script src="../../Web_Programming_jquery/jquery_3.3.1.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        $("#bnt1").click(function(){
+        $("#btn1").click(function(){
           $("#paragraph1").slideToggle(1000);
         });
-        $("#bnt2").click(function(){
+        $("#btn2").click(function(){
           $("#paragraph2").slideToggle(1000);
         });
       });
@@ -62,8 +62,8 @@
   <body>
     <div>
       <div id="jqHeader">
-        <button id="bnt1" type="button" name="grammar">Grammar</button>
-        <button id="bnt2" type="button" name="selector">Selector</button>
+        <button id="btn1" type="button" name="grammar">Grammar</button>
+        <button id="btn2" type="button" name="selector">Selector</button>
       </div>
       <hr>
       <div id="jqBody">

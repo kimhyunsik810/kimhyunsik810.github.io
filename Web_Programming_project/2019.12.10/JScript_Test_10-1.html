@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JScript_Test_10-1</title>
+    <script type="text/javascript">
+      var newwin = null;
+
+      function load(URL)
+      {
+        newwin = window.open(URL, "myWin", "left = 300, top = 300, width=400, height=300");
+      }
+
+      function newclose()
+      {
+        newWin.close();
+      }
+    </script>
+  </head>
+  <body>
+    <h3>window의 Function으로 윈도우 닫기</h3>
+    <a href="javascript: load('https://www.naver.com/')">새 윈도우 열기(네이버)</a>
+    <br>
+    <a href="javascript: newclose()">새 윈도우 닫기</a>
+    <br>
+    <a href="javascript: window.close()">현재 원도우 닫기</a>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JScript_Test_10-2</title>
+    <script type="text/javascript">
+      function open1()
+      {
+        window.open("JScript_Test_10-1.html", "win", "width=200, height=200");
+      }
+      function open2()
+      {
+        window.open("https://www.google.com", "_self");
+      }
+      function open3()
+      {
+        window.open("https://www.naver.com", "_blank", "width=400, height=500");
+      }
+      function open4()
+      {
+        window.open("https://www.google.com", "google");
+      }
+    </script>
+  </head>
+  <body>
+    <h3>다양한 window.open 사용 방법</h3>
+    <hr>
+    <div>
+      1.JScript_Test_10-1.html을 새 윈도우에 열기
+      <button type="button" name="button" onclick="open1()">JScript_Test_10-1 문서 열기</button>
+    </div>
+    <div>
+      2.구글 홈페이지를 현재 윈도우에 열기
+      <button type="button" name="button" onclick="open2()">Google 홈페이지 열기</button>
+    </div>
+    <div>
+      3.네이버 홈페이지를 400x500 크기로 새 윈도우에 열기
+      <button type="button" name="button" onclick="open3()">Naver 홈페이지 열기</button>
+    </div>
+    <div>
+      4.이름이 google인 윈도우에 구글 홈페이지 열기
+      <button type="button" name="button" onclick="open4()">google 이름으로 열기</button>
+    </div>
+    </div>
+  </body>
+</html>
